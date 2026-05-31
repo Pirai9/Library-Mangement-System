@@ -39,7 +39,7 @@ class AuthController extends Controller
         // Welcome notification
         Notification::create([
             'user_id' => $user->id,
-            'title' => 'Welcome to Smart Library Hub! 🎉',
+            'title' => 'Welcome to PMV Library Management System! 🎉',
             'message' => "Hello {$user->name}! Your account has been created successfully. Start exploring our vast collection of books.",
             'type' => 'system',
         ]);

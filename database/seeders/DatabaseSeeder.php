@@ -164,7 +164,7 @@ class DatabaseSeeder extends Seeder
         foreach ($students as $student) {
             Notification::create([
                 'user_id' => $student->id,
-                'title' => 'Welcome to Smart Library Hub! 🎉',
+                'title' => 'Welcome to PMV Library Management System! 🎉',
                 'message' => "Hello {$student->name}! Welcome to our digital library system.",
                 'type' => 'system',
             ]);
@@ -177,7 +177,7 @@ class DatabaseSeeder extends Seeder
             ]);
         }
 
-        $this->command->info('✅ Smart Library Hub seeded successfully!');
+        $this->command->info('✅ PMV Library Management System seeded successfully!');
         $this->command->info('📧 Admin: admin@library.com / password');
         $this->command->info('📧 Librarian: librarian@library.com / password');
         $this->command->info('📧 Student: alex@student.com / password');
